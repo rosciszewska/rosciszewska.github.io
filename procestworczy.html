@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<meta name="description" content="" />
+	
+	<link rel="stylesheet" href="styles/main.css" />
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="styles/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+	<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+	<style type="text/css">
+		html, body 
+		{ 
+			background:		#ffffff url('images/proces.jpg') no-repeat 50% 0%;
+		}
+	</style>
+</head>
+
+<body>
+
+<div class="ms_container">
+	<div class="ms_header">
+		<ul>
+			<li><a href="index.html">Strona główna</a></li>
+			<li><a href="omnie.html">O mnie</a></li>
+			<li><a href="galeria.html">Galeria</a></li>
+			<li><a href="wystawy.html">Wystawy</a></li>
+			<li><a href="publikacje.html">Publikacje</a></li>
+			<li><a href="procestworczy.html" class="hover">Proces twórczy</a></li>			
+		</ul>
+		<div style="float: right; text-align: right; position: relative; top: -10px;">Monika Rościszewska<br/><a href="mailto:monika@rosciszewska.com">monika@rosciszewska.com</a></div>
+	</div>
+
+	<div class="ms_page">
+		<div class="ms_inside gallery">	
+			<p style="text-align: left; line-height: 150%;">
+				<img src="images/monika2.jpg" width="335" align="left" style="margin-right: 25px; padding: 5px;	border: solid 1px #EFEFEF;"/>
+					Inspiracją, punktem wyjścia, centralnym motywem mojej pracy jest świadomość rozdarć, jakim podlega nasze życie. Człowiek zmaga się w wewnętrznej walce. 
+				<br/><br/>
+				Zadaję sobie pytanie, jak można pozostać wrażliwym w  świecie zaawansowanej cywilizacji, tak mocno związanej z  postawą konsumpcyjną, nacechowanej skrajną powierzchownością. Artysta, jako osoba wrażliwa, a nawet nadwrażliwa, chcąc tworzyć i przetrwać we współczesnym świecie, musi odznaczać się „grubą skórą”, czyli powinien posiadać dwie cechy osobowości daleko od siebie odbiegające. Staram się wyjaśnić, jakie warunki, predyspozycje kierują człowiekiem, dzięki czemu może stać się artystą... i zaczyna tworzyć, co ma na to wpływ, jaka determinacja nim kieruje i co skłania go do „walki”. 
+				<br/><br/>
+				W  pracy artysty nie ma  stanów i  rozwiązań zamkniętych i  ostatecznych, zarówno w  samym twórcy, jak i w rzeczywistości, ku której on się kieruje poprzez swe dzieło. W  mojej pracy stosuję dwa rodzaje materiałów, szkło i  metal, dwie tak różne materie; porównuję je  do  dwóch cech osobowości. Gdy patrzymy przez szkło, zniekształca się, a raczej przekształca się obraz postaci. Deformacje w  mojej pracy są  odpowiednikiem procesów, którym podlega człowiek, przekształceń, przeobrażeń. Toczącej się w nim walki. Pęknięcia, deformacje łamią człowieka, jednocześnie go budując. 
+				Doświadczenia nas zmieniają, odciskają swoje piętno w  nas samych, a  także w  rzeczywistości przez nas odbieranej. Chcę przedstawić trudny do  zrozumienia paradoks w samej istocie artysty, poprzez opozycję materii chcę ujawnić antynomiczność ludzkiej egzystencji. 
+				<br/><br/>
+				Artysta, walcząc z racjonalnością świata, decyduje się na alogiczność własnej świadomości, przez co odbierany jest jako odmienny. Podczas poszukiwań zmaga się z tymi odmiennymi światami, próbując je razem połączyć. Twórczość i  urojenia wywodzą się ze  strefy cienia, artysta i twórca urojeń są sobie bliscy w jaskrawości przeżyć, w  potrzebie wykreowania całkowicie nowej rzeczywistości. Jest to  świat odmienny od każdego innego, ich własny, możemy go zobaczyć poprzez dzieło, dotrzeć do obiektów, miejsc dla nas nieznanych.
+			</p>
+			<img src="images/monika3.jpg" width="1000"/>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function(){
+		$("area[rel^='prettyPhoto']").prettyPhoto();
+		
+		$(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:3000, autoplay_slideshow: false});
+		$(".gallery:gt(0) a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'fast',slideshow:10000, hideflash: true});
+
+		$("#custom_content a[rel^='prettyPhoto']:first").prettyPhoto({
+			custom_markup: '<div id="map_canvas" style="width:260px; height:265px"></div>',
+			changepicturecallback: function(){ initialize(); }
+		});
+
+		$("#custom_content a[rel^='prettyPhoto']:last").prettyPhoto({
+			custom_markup: '<div id="bsap_1259344" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div><div id="bsap_1237859" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6" style="height:260px"></div><div id="bsap_1251710" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div>',
+			changepicturecallback: function(){ _bsap.exec(); }
+		});
+	});
+</script>
+
+</body>
+</html>
